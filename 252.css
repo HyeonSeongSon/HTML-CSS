@@ -1,0 +1,6 @@
+p {
+  margin: 8px;
+  /* inline은 형태를 가지고 있지 않고 단순히 감싼 형태
+  하지만 inline-block은 상자 형태를 유지하며 다른것들이 들어오지 않는다 */
+  display: inline-block;
+}
