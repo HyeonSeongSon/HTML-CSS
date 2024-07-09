@@ -1,0 +1,13 @@
+p {
+  /* 글자색 */
+  color: skyblue;
+
+  /* 배경색 */
+  background-color: #333;
+}
+
+ul > li {
+  color: rgb(200, 200, 0);
+  
+  background-color: hsl(257, 60%, 62%);
+}

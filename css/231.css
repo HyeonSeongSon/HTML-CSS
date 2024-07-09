@@ -1,0 +1,8 @@
+p {
+  /* left, center, right, justify */
+  text-align: justify;
+
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 5em;
+}
