@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>flex 레이아웃</h1>
+  <p>
+    display를 flex로 지정하면 플렉스 방식으로 자식 요소들을 배치하게 됩니다. <br>
+    inline-flex는 해당 컨테니어 요소를 인라인으로 만든다는 차이가 있습니다. <br><br>
+
+    flex-direction은 내부 요소(아이템)들을 어느 축(가로 또는 세로)을 <br>
+    이 값에 따라 justify-content, align-items, align-content 등의 <br>
+    속성들이 작용할 방향이 결정됩니다. <br><br>
+
+    flex-wrap은 내부 요소의 갯수 X 길이가 컨테이너를 넘어갈 때 이들을 <br>
+    여러 줄에 걸쳐 나열할지 여부를 정합니다. <br><br>
+
+    justify-content는 메인 축에서 아이템들을 정렬할 방식을 정합니다. <br>
+    flex-start(end)는 row(column)-reverse의 영향을 받는다는 점에서 <br>
+    start(end)와 다릅니다. flex-가 붙은 것을 사용하세요. <br><br>
+
+    align-items는 수직 축(메인 축의 반대)에서 아이템들을 정렬할 방식을 <br>
+    정합니다. wrap으로 아이템이 여러 줄이 되면 align-content를 <br>
+    사용해서 보다 다양한 방식으로 정렬할 수 있습니다. <br><br>
+
+    gap 속성으로는 아이템간에 간격을 줄 수 있으며 두 개의 값을 넣어서 <br>
+    가로 간격과 세로 간격을 다르게 지정하는 것도 가능합니다.
+  </p><br><br>
+
+  <p>
+    <h2>flex 컨테이너 안 아이템의 속성들</h2>
+    flex-basis는 메인 축상의 길이로, 컨테이너의 flex-direction 값에 brq
+    따라 너비 또는 높이값으로 작용합니다. 기본값은 auto입니다. <br><br>
+
+    flex-grow는 빈 공간을 채울지 여부, 그리고 채울 시 다른 아이템들의 <br>
+    동 속성값에 비례해서 공백을 나눠갖습니다. 기본값은 0 입니다. <br><br>
+
+    flex-shrink 속성은 전체 공간이 부족할 때, 해당 아이템의 길이가 <br>
+    컨텐츠의 너비 또는 flex-basis로 지정한 값보다 작아질 수 있을지를 <br>
+    지정합니다. 기본값은 1이며, 증가할수록 길이가 많이 줄어듭니다. <br><br>
+
+    위 속성들은 아래와 같이 flex 속성으로 한 줄에 나타낼 수 있습니다. <br><br>
+
+    flex: (flex-grow 값); <br>
+    flex: (flex-grow 값) (flex-basis 값); <br>
+    flex: (flex-grow 값) (flex-shrink 값) (flex-basis 값);
+  </p>
+</body>
+</html>
