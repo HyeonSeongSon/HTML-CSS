@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>DOCTYPE</h1>
+  <ul>
+    <li>문서가 형식과 버전으로 작성되었는지를 명시</li>
+    <li>선언시 standards mode(최신 형식)로 문서 실행</li>
+    <li>선언하지 않을 경우 quirks mode(익플5, 네이게이터 4 등 옛날 브라우저를 모방)로 문서 실행</li>
+  </ul>
+
+  <h1>head 태그</h1>
+  <p>메타데이터(기계가 읽을 정보)가 담기는 곳</p>
+  <ul>
+    <li>페이지의 제목</li>
+    <li>파비콘</li>
+    <li>기타 메타 정보</li>
+    <li>CSS와 자바스크립트 등의 코드 및 링크</li>
+  </ul>
+
+  <h1>title 태그</h1>
+  <ul>
+    <li>브라우저의 탭에 표시</li>
+    <li>브라우저 즐겨찾기의 제목으로 표시</li>
+    <li>검색엔진 검색결과의 제목으로 표시</li>
+  </ul>
+
+  <h1>meta 태그와 속성들</h1>
+  <dl>
+    <dt>charset</dt>
+    <dd>페이지가 어떤 문자로 작성되었는지 명시 - 글자가 깨지지 않도록</dd>
+    <dd>UTF-8 - 전세계 거의 모든 문자를 표현할 수 있는(유니코드) 형식</dd>
+    <dd>문서 저장 형식도 UTF-8로 맞출 것!</dd>
+    <dd>html 태그의 lang 속성과의 비교: 언어 vs 문자 인코딩</dd>
+    <dt>IE 관련 호환정보</dt>
+    <dd>익스플로러에서 열람 시 어떤 모드로 실행할 것인지 지정 (...IE=7, IE=8, IE=9, IE=edge)</dd>
+    <dd>IE=edge : 해당 익스플로러 버전에서 가장 최신 형식으로 (11의 경우 11)</dd>
+    <dd>이후에는 사용되지 않을 설정</dd>
+    <dt>뷰포트 관련 정보</dt>
+    <dd>viewport: 화면에 보여지고 있는 영역</dd>
+    <dd>시각적 뷰포트: 사람에게 보여지는 영역</dd>
+    <dd>레이아웃 뷰포트: 브라우저가 웹페이지를 그리는 영역</dd>
+    <dt>Open Graph 정보</dt>
+    <dd>Meta(구 페이스북에)에서 만든 프로토콜</dd>
+  </dl>
+
+  <h1>파비콘</h1>
+  <ul>
+    <li>오늘날에는 .png, .gif 파일로 파비콘 사용이 가능합니다.</li>
+  </ul>
+</body>
+</html>
