@@ -1,0 +1,162 @@
+body { padding: 24px; }
+article, article * {
+  position: relative;
+  margin: 4px;
+  padding: 32px 20px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+article:hover, article *:hover {
+  border-color: slateblue;
+}
+article::after, article *::after {
+  position: absolute;
+  top: -0.8em;
+  left: 0.6em;
+  font-size: 1.2em;
+  padding: 0.2em 0.64em;
+  color: white;
+  background-color: #bbb;
+  border-radius: 0.8em;
+}
+article:hover::after, article *:hover::after {
+  background-color: slateblue;
+}
+
+article {
+  display: flex;
+  width: 920px;
+}
+
+article aside {
+  display: flex;
+}
+
+article aside figure {
+  width: 240px;
+}
+
+article div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+article div ul {
+  list-style: none;
+}
+
+article div ul li {
+  list-style: none;
+  padding: 24px;
+}
+
+article div ul li.special, 
+.card__list-item--special {
+  background-color: #ccc;
+}
+
+article div ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* by-tag.css */
+article::after {
+  content: 'article';
+}
+
+article aside::after {
+  content: 'aside';
+}
+
+article aside figure::after {
+  content: 'figure'
+}
+
+article div::after {
+  content: 'div';
+}
+
+article div header::after {
+  content: 'header';
+}
+
+article div ul::after {
+  content: 'ul';
+}
+
+article div ul li::after {
+  content: 'li';
+}
+
+article div ul li.special::after {
+  content: 'li.special';
+}
+
+/* by-class.css */
+.card::after {
+  content: 'article.card';
+}
+
+.card .thumb::after {
+  content: 'aside.thumb';
+}
+
+.card .thumb .image::after {
+  content: 'figure.image'
+}
+
+.card .body::after {
+  content: 'div.body';
+}
+
+.card .body .title::after {
+  content: 'header.title';
+}
+
+.card .body .list::after {
+  content: 'ul.list';
+}
+
+.card .body .list .list-item::after {
+  content: 'li.list-item';
+}
+
+.card .body .list .list-item.special::after {
+  content: 'li.list-item.special';
+}
+
+/* by-bem.css */
+.card::after {
+  content: 'article.card';
+}
+
+.card__thumb::after {
+  content: 'aside.card__thumb';
+}
+
+.card__image::after {
+  content: 'figure.card__image'
+}
+
+.card__body::after {
+  content: 'div.card__body';
+}
+
+.card div header::after {
+  content: 'header.card__title';
+}
+
+.card__list::after {
+  content: 'ul.card__list';
+}
+
+.card__list-item::after {
+  content: 'li.card__list-item';
+}
+
+.card__list-item--special::after {
+  content: 'li.card__list-item--special';
+}
